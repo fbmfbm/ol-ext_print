@@ -44,7 +44,7 @@ const MapPanel = ()=>{
 
 
     console.log(printControl._labels)
-    console.log(printControl.getContentElement())
+    console.log(printControl.getContentElement(""))
     
         
     useEffect(() => {

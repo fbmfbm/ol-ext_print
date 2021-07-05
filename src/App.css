@@ -4,13 +4,33 @@
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
+  background-image: url("./img/vague1.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(56, 56, 56);
+}
+
+.footer {
+  position: absolute;
+  bottom: 1px;
+  background-color: #ffffff;
+  background-image: url("./img/vague1.png");
+  background-repeat: no-repeat;
+  background-size: 15%;
+  min-height: 100px;
+  height: 200px;
+  width: 100%;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 

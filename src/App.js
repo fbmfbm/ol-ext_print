@@ -22,7 +22,7 @@ function App() {
             </li>
           </ul>
         </nav>
-        <div className={"App-header"}>
+        <div className={"App-header m-2 shadow-md"}>
         <Switch>
           <Route path="/print">
             <PrintMap />
@@ -32,12 +32,15 @@ function App() {
           </Route>
           <Route path="/">
             <div className="App">
-              <header className="App-header">
+              
               <h1 className={"text-4xl font-bold"}><span className={"font-light"}>Test OpenLayers</span> Impression</h1>
-              </header>
+              
             </div>
           </Route>
         </Switch>
+        <div className={'footer'}>
+         
+        </div>
         </div>
       </div>
     </Router>

@@ -16,7 +16,7 @@
 
 
 .ol-ext-print-dialog button[type="submit"] {
-    background-color: rgba(122, 0, 223, 0.7);
+    background-color: rgba(65, 29, 95, 0.7);
     color: #fff;
     font-weight: bold;
 }
@@ -31,13 +31,13 @@
 
 .ol-ext-print-dialog .ol-print-param h2 {
     display: block;
-    color: rgba(122, 0, 223, 0.7);
+    color: rgba(65, 29, 95, 0.7);
     font-size: 1.5em;
     font-weight: 700;
 }
 
 .ol-ext-toggle-switch span {
-    color: rgba(122, 0, 223, 0.5);
+    color: rgba(65, 29, 95, 0.7);
     position: relative;
     cursor: pointer;
     background-color: #ccc;
