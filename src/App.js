@@ -1,24 +1,46 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
+import PrintMap from './components/PrintMap';
+import HistoMap from './components/HistoMap';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <nav className={'bg-purple-500 text-white p-4 flex-auto'}>
+          <ul className={'flex justify-center'}>
+            <li  className={'mr-5'}>
+              <Link className={'bg-purple-900 hover:bg-purple-700 p-2 rounded-md shadow hover:shadow-lg'} to="/">Accueil</Link>
+            </li>
+            <li className={'mr-5'}>
+              <Link className={'bg-purple-900 hover:bg-purple-700 p-2 rounded-md shadow hover:shadow-lg'} to="/print">Impression panel</Link>
+            </li>
+            <li className={'mr-5'}>
+              <Link className={'bg-purple-900 hover:bg-purple-700 p-2 rounded-md shadow hover:shadow-lg'} to="/histo">Navigation historique</Link>
+            </li>
+          </ul>
+        </nav>
+        <div className={"App-header"}>
+        <Switch>
+          <Route path="/print">
+            <PrintMap />
+          </Route>
+          <Route path="/histo">
+            <HistoMap />
+          </Route>
+          <Route path="/">
+            <div className="App">
+              <header className="App-header">
+              <h1 className={"text-4xl font-bold"}><span className={"font-light"}>Test OpenLayers</span> Impression</h1>
+              </header>
+            </div>
+          </Route>
+        </Switch>
+        </div>
+      </div>
+    </Router>
   );
 }
 
